@@ -71,8 +71,8 @@ public class MainActivity extends AppCompatActivity {
                 } else if (mStoryIndex == 1){
                     mStoryIndex =3;
                     mTextView.setText(stories[mStoryIndex].getStory());
-                    mButtonTop.setText(stories[mStoryIndex].getAnswerTop());
-                    mButtonBottom.setText(stories[mStoryIndex].getAnswerBottom());
+                    mButtonTop.setVisibility(View.INVISIBLE);
+                    mButtonBottom.setVisibility(View.INVISIBLE);
                 } else {
                     mStoryIndex =4;
                     mTextView.setText(stories[mStoryIndex].getStory());
